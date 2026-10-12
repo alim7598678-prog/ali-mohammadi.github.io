@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="9Vt0O4G_ce8uq8lVeSywQdfDo4v9CUjr6JH58BWdbwo" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ali Mohammadi | Materials Engineering, Composites and Surface Engineering</title>
-
+    <meta name="google-site-verification" content="9Vt0O4G_ce8uq8lVeSywQdfDo4v9CUjr6JH58BWdbwo">
+    
+    <title>Ali Mohammadi | Materials Engineering Researcher</title>
+    
     <meta name="description" content="Ali Mohammadi is a materials engineering researcher working on aluminum metal matrix composites, powder metallurgy, SiC-reinforced materials, surface coatings, tribology, corrosion, and advanced ceramics.">
-
     <meta name="author" content="Ali Mohammadi">
     <meta name="robots" content="index, follow">
-
     <meta name="keywords" content="Ali Mohammadi, Materials Engineering, Metal Matrix Composites, A380 Aluminum, Silicon Carbide, Powder Metallurgy, Surface Engineering, Tribology, Protective Coatings, Advanced Ceramics">
 
     <link rel="canonical" href="https://alim7598678-prog.github.io/">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="Ali Mohammadi | Materials Engineering Researcher">
     <meta property="og:description" content="Research profile of Ali Mohammadi, covering metal matrix composites, powder metallurgy, surface engineering, tribology, coatings, and advanced ceramics.">
@@ -50,8 +53,23 @@
     </script>
 
     <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --radius: 12px;
+        }
+
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         html {
@@ -59,145 +77,228 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            max-width: 1000px;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            max-width: 920px;
             margin: 0 auto;
-            padding: 32px 24px;
-            line-height: 1.75;
-            color: #263238;
-            background: #ffffff;
+            padding: 40px 24px;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-main);
         }
 
         header {
-            padding: 24px 0 28px;
-            border-bottom: 1px solid #dce3ea;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+            border: 1px solid var(--border);
+            margin-bottom: 32px;
         }
 
         h1 {
-            margin: 0 0 8px;
-            color: #17365d;
-            font-size: 2.3rem;
-            line-height: 1.3;
-        }
-
-        h2 {
-            color: #17365d;
-            font-size: 1.55rem;
-            margin-bottom: 16px;
-            padding-bottom: 7px;
-            border-bottom: 2px solid #e8edf3;
-        }
-
-        h3 {
-            color: #24476a;
-            font-size: 1.1rem;
+            color: var(--primary);
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
             margin-bottom: 6px;
         }
 
-        p {
-            margin-top: 8px;
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            color: var(--text-main);
+            margin-bottom: 14px;
+            font-size: 1.02rem;
+        }
+
+        .profile-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f1f5f9;
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid var(--border);
+        }
+
+        .btn-link:hover {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+            transform: translateY(-1px);
+        }
+
+        .btn-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        section {
+            background: var(--bg-card);
+            padding: 32px 40px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.03);
+            border: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Research Interests Pills */
+        .interests-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .interest-pill {
+            background: #f1f5f9;
+            color: var(--primary);
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.92rem;
+            font-weight: 500;
+            border: 1px solid var(--border);
+        }
+
+        /* Items (Education & Experience) */
+        .item-block {
+            margin-bottom: 24px;
+        }
+
+        .item-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-block h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .item-meta {
+            color: var(--text-muted);
+            font-size: 0.94rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        /* Publications List */
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 20px;
+            font-size: 0.98rem;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .journal {
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .publication-doi {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 4px;
+            font-size: 0.88rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .publication-doi:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px 24px;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-box p:last-child {
+            margin-bottom: 0;
         }
 
         a {
-            color: #0759a5;
+            color: var(--accent);
             text-decoration: none;
-            overflow-wrap: anywhere;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        a:focus-visible {
-            outline: 2px solid #0759a5;
-            outline-offset: 3px;
-        }
-
-        .subtitle {
-            color: #526273;
-            font-size: 1.1rem;
-            margin-top: 4px;
-        }
-
-        .profile-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px 18px;
-            margin-top: 20px;
-        }
-
-        .profile-links a {
-            font-weight: bold;
-        }
-
-        section {
-            margin-top: 36px;
-        }
-
-        ul,
-        ol {
-            padding-left: 25px;
-        }
-
-        li {
-            margin-bottom: 13px;
-        }
-
-        .publication-title {
-            font-weight: bold;
-            color: #243b53;
-        }
-
-        .authors {
-            color: #526273;
-            font-size: 0.96rem;
-        }
-
-        .journal {
-            font-style: italic;
-        }
-
-        .publication-doi {
-            display: inline-block;
-            margin-top: 4px;
-            font-size: 0.94rem;
-        }
-
-        .education-item,
-        .research-item {
-            margin-bottom: 24px;
-        }
-
-        .contact-box {
-            background: #f4f7fa;
-            border: 1px solid #e1e8ef;
-            border-radius: 8px;
-            padding: 18px 20px;
-        }
-
         footer {
-            margin-top: 48px;
-            padding-top: 20px;
-            border-top: 1px solid #dce3ea;
-            color: #657381;
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
             font-size: 0.9rem;
+            padding-bottom: 20px;
         }
 
-        @media (max-width: 600px) {
+        footer a {
+            color: var(--text-muted);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
             body {
-                padding: 20px 16px;
+                padding: 16px 12px;
             }
-
+            header, section {
+                padding: 24px 20px;
+            }
             h1 {
-                font-size: 1.85rem;
-            }
-
-            h2 {
-                font-size: 1.35rem;
-            }
-
-            .profile-links {
-                gap: 10px 14px;
+                font-size: 1.9rem;
             }
         }
     </style>
@@ -207,34 +308,32 @@
 
 <header id="top">
     <h1>Ali Mohammadi</h1>
+    <p class="subtitle">Materials Engineering Researcher | Materials Science & Surface Engineering</p>
 
-    <p class="subtitle">
-        Materials Engineering Researcher |
-        Materials Science and Surface Engineering
+    <p>
+        I am a materials engineering researcher with research interests in metal matrix composites, powder metallurgy, surface engineering, tribology, protective coatings, and advanced ceramics. My research explores the relationships between processing conditions, microstructure, and material performance, including mechanical properties, wear behavior, and corrosion resistance.
     </p>
 
     <p>
-        I am a materials engineering researcher with research interests
-        in metal matrix composites, powder metallurgy, surface engineering,
-        tribology, protective coatings, and advanced ceramics.
-        My research has explored the relationships between processing
-        conditions, microstructure, and material performance, including
-        mechanical properties, wear behavior, and corrosion resistance.
-    </p>
-
-    <p>
-        My work spans aluminum-based composites reinforced with ceramic
-        nanoparticles, hybrid surface coatings, solid-state processing,
-        and sustainable materials development. I am particularly interested
-        in developing and characterizing advanced materials with improved
-        mechanical, tribological, and corrosion performance.
+        My work spans aluminum-based composites reinforced with ceramic nanoparticles, hybrid surface coatings, solid-state processing, and sustainable materials development. I am particularly dedicated to designing and characterizing advanced materials with superior mechanical, tribological, and functional performance.
     </p>
 
     <div class="profile-links">
-        <a href="https://scholar.google.com/citations?user=UZLpVnYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a href="https://orcid.org/0000-0001-7929-9129" target="_blank" rel="noopener noreferrer">ORCID</a>
-        <a href="https://www.linkedin.com/in/ali-mohammadi-material" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/alim7598678-prog" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn-link" href="https://scholar.google.com/citations?user=UZLpVnYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            Google Scholar
+        </a>
+        <a class="btn-link" href="https://orcid.org/0000-0001-7929-9129" target="_blank" rel="noopener noreferrer">
+            ORCID
+        </a>
+        <a class="btn-link" href="https://www.linkedin.com/in/ali-mohammadi-material" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+        </a>
+        <a class="btn-link" href="https://github.com/alim7598678-prog" target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+        <a class="btn-link" href="https://www.scopus.com/authid/detail.uri?authorId=57216703121" target="_blank" rel="noopener noreferrer">
+            Scopus
+        </a>
     </div>
 </header>
 
@@ -242,286 +341,141 @@
 
 <section id="research-interests">
     <h2>Research Interests</h2>
-
-    <ul>
-        <li>Metal Matrix Composites and Nanocomposites</li>
-        <li>Powder Metallurgy and Solid-State Processing</li>
-        <li>Surface Engineering and Protective Coatings</li>
-        <li>Tribology, Wear, and Mechanical Properties</li>
-        <li>Corrosion Behavior and Electrochemical Characterization</li>
-        <li>Advanced Ceramics and High-Temperature Materials</li>
-        <li>Microstructural Characterization and Materials Performance</li>
-        <li>Sustainable Materials and Ceramic-Reinforced Composites</li>
-    </ul>
+    <div class="interests-grid">
+        <div class="interest-pill">Metal Matrix Composites & Nanocomposites</div>
+        <div class="interest-pill">Powder Metallurgy & Solid-State Processing</div>
+        <div class="interest-pill">Surface Engineering & Protective Coatings</div>
+        <div class="interest-pill">Tribology, Wear, & Mechanical Properties</div>
+        <div class="interest-pill">Corrosion & Electrochemical Characterization</div>
+        <div class="interest-pill">Advanced Ceramics & High-Temperature Materials</div>
+        <div class="interest-pill">Microstructural Characterization</div>
+        <div class="interest-pill">Sustainable Materials Development</div>
+    </div>
 </section>
 
 <section id="education">
     <h2>Education</h2>
 
-    <div class="education-item">
+    <div class="item-block">
         <h3>M.Sc. in Materials Engineering</h3>
-
-        <p>
-            <strong>University of Tabriz</strong>,
-            Tabriz, Iran | 2019–2022
-        </p>
-
-        <p>
-            <strong>Thesis:</strong>
-            Investigation of the microstructure, mechanical properties,
-            and abrasive wear behavior of A380 aluminum nanocomposites
-            reinforced with SiC nanoparticles produced by powder metallurgy.
-        </p>
+        <p class="item-meta">University of Tabriz, Tabriz, Iran | 2019 – 2022</p>
+        <p><strong>Thesis:</strong> Investigation of the microstructure, mechanical properties, and abrasive wear behavior of A380 aluminum nanocomposites reinforced with SiC nanoparticles produced by powder metallurgy.</p>
     </div>
 
-    <div class="education-item">
+    <div class="item-block" style="margin-top: 24px;">
         <h3>B.Sc. in Materials Engineering – Ceramics</h3>
-
-        <p>
-            <strong>University of Tabriz</strong>,
-            Tabriz, Iran | 2015–2019
-        </p>
-
-        <p>
-            <strong>Project:</strong>
-            High-temperature oxidation behavior of ZrB2 composites
-            reinforced with SiC, Al2O3, and B4C.
-        </p>
+        <p class="item-meta">University of Tabriz, Tabriz, Iran | 2015 – 2019</p>
+        <p><strong>Project:</strong> High-temperature oxidation behavior of ZrB2 composites reinforced with SiC, Al2O3, and B4C.</p>
     </div>
 </section>
 
 <section id="research-experience">
     <h2>Research Experience</h2>
 
-    <div class="research-item">
+    <div class="item-block">
         <h3>Aluminum-Based Metal Matrix Composites</h3>
-
-        <p>
-            Research on A380 aluminum composites reinforced with SiC
-            nanoparticles using powder metallurgy, focusing on processing
-            conditions, microstructure, hardness, mechanical properties,
-            and wear behavior.
-        </p>
+        <p>Research on A380 aluminum composites reinforced with SiC nanoparticles using powder metallurgy, focusing on processing conditions, microstructure, hardness, mechanical properties, and wear behavior.</p>
     </div>
 
-    <div class="research-item">
+    <div class="item-block" style="margin-top: 20px;">
         <h3>Surface Engineering and Protective Coatings</h3>
-
-        <p>
-            Research on hybrid coatings and nanoparticle-reinforced
-            coating systems, with an emphasis on tribological performance,
-            corrosion resistance, and coating properties.
-        </p>
+        <p>Research on hybrid coatings and nanoparticle-reinforced coating systems, with an emphasis on tribological performance, corrosion resistance, and multi-property optimization.</p>
     </div>
 
-    <div class="research-item">
+    <div class="item-block" style="margin-top: 20px;">
         <h3>Solid-State Processing and Advanced Materials</h3>
-
-        <p>
-            Research involving friction stir processing of aluminum alloys,
-            as well as the development and characterization of advanced
-            ceramic and sustainable materials.
-        </p>
+        <p>Research involving friction stir processing of aluminum alloys, as well as the synthesis and characterization of advanced ceramic and sustainable materials.</p>
     </div>
 </section>
 
 <section id="publications">
     <h2>Selected Publications</h2>
-
-    <p>
-        My publications cover metal matrix composites, ceramic materials,
-        surface coatings, friction stir processing, and sustainable
-        materials development. The DOI links below provide access to
-        the corresponding publication records.
+    <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.95rem;">
+        Selected peer-reviewed journal publications covering metal matrix composites, ceramic systems, surface coatings, and friction stir processing.
     </p>
 
     <ol>
         <li>
-            <span class="publication-title">
-                Synergistic effect of GPMS-functionalized SiO2/Al2O3
-                hybrid nanoparticles on the anti-corrosion and wet
-                adhesion properties of epoxy coatings
-            </span>.
-            <span class="journal">Progress in Organic Coatings</span>
-            (2026).
-
+            <span class="publication-title">Synergistic effect of GPMS-functionalized SiO2/Al2O3 hybrid nanoparticles on the anti-corrosion and wet adhesion properties of epoxy coatings</span>. 
+            <span class="journal">Progress in Organic Coatings</span> (2026).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1016/j.porgcoat.2026.110505" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1016/j.porgcoat.2026.110505
+                DOI: 10.1016/j.porgcoat.2026.110505
             </a>
         </li>
 
         <li>
-            <span class="publication-title">
-                Oxalate-directed polyhedral manganese cobalt oxide
-                with hierarchical mesoporosity for advanced supercapacitors
-            </span>.
-            <span class="journal">
-                Journal of Science: Advanced Materials and Devices
-            </span>
-            (2026).
-
+            <span class="publication-title">Oxalate-directed polyhedral manganese cobalt oxide with hierarchical mesoporosity for advanced supercapacitors</span>. 
+            <span class="journal">Journal of Science: Advanced Materials and Devices</span> (2026).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1016/j.jsamd.2026.101237" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1016/j.jsamd.2026.101237
+                DOI: 10.1016/j.jsamd.2026.101237
             </a>
         </li>
 
         <li>
-            <span class="publication-title">
-                Sustainable engineering of rice husk-derived mesoporous
-                silica for optimal dispersion and reinforcement in
-                A380 aluminum composites
-            </span>.
-            <span class="journal">Results in Materials</span>
-            (2026).
-
+            <span class="publication-title">Sustainable engineering of rice husk-derived mesoporous silica for optimal dispersion and reinforcement in A380 aluminum composites</span>. 
+            <span class="journal">Results in Materials</span> (2026).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1016/j.rinma.2026.101034" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1016/j.rinma.2026.101034
+                DOI: 10.1016/j.rinma.2026.101034
             </a>
         </li>
 
         <li>
-            <span class="publication-title">
-                Decoupling grain refinement and precipitation strengthening
-                in CNT-reinforced AA7075 nanocomposite joints via
-                single- and triple-pass friction stir processing:
-                Thermal over-aging overrides Hall-Petch
-            </span>.
-            <span class="journal">Results in Engineering</span>
-            (2026).
-
+            <span class="publication-title">Decoupling grain refinement and precipitation strengthening in CNT-reinforced AA7075 nanocomposite joints via single- and triple-pass friction stir processing: Thermal over-aging overrides Hall-Petch</span>. 
+            <span class="journal">Results in Engineering</span> (2026).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1016/j.rineng.2026.111018" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1016/j.rineng.2026.111018
+                DOI: 10.1016/j.rineng.2026.111018
             </a>
         </li>
 
         <li>
-            <span class="publication-title">
-                Synergistic optimization of SiC concentration in
-                Ni–SiC–WS2 hybrid coatings: Balancing tribology,
-                mechanical properties, and corrosion resistance
-            </span>.
-            <span class="journal">
-                Journal of Materials Research and Technology
-            </span>
-            (2026).
-
+            <span class="publication-title">Synergistic optimization of SiC concentration in Ni–SiC–WS2 hybrid coatings: Balancing tribology, mechanical properties, and corrosion resistance</span>. 
+            <span class="journal">Journal of Materials Research and Technology</span> (2026).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1016/j.jmrt.2026.05.026" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1016/j.jmrt.2026.05.026
+                DOI: 10.1016/j.jmrt.2026.05.026
             </a>
         </li>
 
         <li>
-            <span class="publication-title">
-                Effect of SiC content and milling time on the hardness
-                and compressive strength of A380-based composites
-            </span>.
-            <span class="journal">Materials Today Communications</span>
-            (2026).
-
+            <span class="publication-title">Effect of SiC content and milling time on the hardness and compressive strength of A380-based composites</span>. 
+            <span class="journal">Materials Today Communications</span> (2026).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1016/j.mtcomm.2026.114876" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1016/j.mtcomm.2026.114876
+                DOI: 10.1016/j.mtcomm.2026.114876
             </a>
         </li>
 
         <li>
-            <span class="publication-title">
-                Preparation and characterization of porous alumina
-                granules (CRUSHMAT) at different sintering temperatures
-            </span>.
-            <span class="journal">Ceramics International</span>
-            (2026).
-
+            <span class="publication-title">Preparation and characterization of porous alumina granules (CRUSHMAT) at different sintering temperatures</span>. 
+            <span class="journal">Ceramics International</span> (2026).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1016/j.ceramint.2025.12.244" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1016/j.ceramint.2025.12.244
+                DOI: 10.1016/j.ceramint.2025.12.244
             </a>
         </li>
 
         <li>
-            <span class="publication-title">
-                Investigation of microstructure, mechanical properties,
-                and wear behavior of A380 aluminum nanocomposite
-                reinforced with SiC nanoparticles produced by
-                powder metallurgy
-            </span>.
-            <span class="journal">
-                Proceedings of the Institution of Mechanical Engineers,
-                Part E: Journal of Process Mechanical Engineering
-            </span>
-            (2022).
-
+            <span class="publication-title">Investigation of microstructure, mechanical properties, and wear behavior of A380 aluminum nanocomposite reinforced with SiC nanoparticles produced by powder metallurgy</span>. 
+            <span class="journal">Proceedings of the Institution of Mechanical Engineers, Part E: Journal of Process Mechanical Engineering</span> (2022).
             <br>
             <a class="publication-doi" href="https://doi.org/10.1177/09544089221145482" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1177/09544089221145482
+                DOI: 10.1177/09544089221145482
             </a>
         </li>
     </ol>
-
-    <p>
-        For the complete publication list and citation information, visit
-        my
-        <a href="https://scholar.google.com/citations?user=UZLpVnYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            Google Scholar profile
-        </a>.
-    </p>
-</section>
-
-<section id="profiles">
-    <h2>Research Profiles</h2>
-
-    <ul>
-        <li>
-            <a href="https://orcid.org/0000-0001-7929-9129" target="_blank" rel="noopener noreferrer">
-                ORCID: 0000-0001-7929-9129
-            </a>
-        </li>
-
-        <li>
-            <a href="https://scholar.google.com/citations?user=UZLpVnYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-                Google Scholar
-            </a>
-        </li>
-
-        <li>
-            <a href="https://www.scopus.com/authid/detail.uri?authorId=57216703121" target="_blank" rel="noopener noreferrer">
-                Scopus Author Profile
-            </a>
-        </li>
-
-        <li>
-            <a href="https://www.linkedin.com/in/ali-mohammadi-material" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
-        </li>
-
-        <li>
-            <a href="https://github.com/alim7598678-prog" target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
-        </li>
-    </ul>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-
     <div class="contact-box">
-        <p>
-            For research-related inquiries and potential academic
-            collaborations, you can contact me by email.
-        </p>
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:alim7598678@gmail.com">
-                alim7598678@gmail.com
-            </a>
+        <p>For research-related inquiries, academic collaborations, or post-doc discussions, please feel free to reach out via email.</p>
+        <p style="margin-top: 12px;">
+            <strong>Email:</strong> 
+            <a href="mailto:alim7598678@gmail.com">alim7598678@gmail.com</a>
         </p>
     </div>
 </section>
@@ -529,14 +483,8 @@
 </main>
 
 <footer>
-    <p>
-        © 2026 Ali Mohammadi |
-        Materials Engineering Researcher
-    </p>
-
-    <p>
-        <a href="#top">Back to top</a>
-    </p>
+    <p>© 2026 Ali Mohammadi | Materials Engineering Researcher</p>
+    <p style="margin-top: 6px;"><a href="#top">Back to top ↑</a></p>
 </footer>
 
 </body>
